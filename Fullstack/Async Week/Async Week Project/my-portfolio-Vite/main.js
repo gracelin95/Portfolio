@@ -6,15 +6,24 @@ const world = {
   plane: {
     width: 10,
     height: 10,
+    widthSegments: 10,
+    heightSegments: 10,
   },
 };
-gui.add(world.plane, "width", 1, 20).onChange(() => {
+gui.add(world.plane, "width", 1, 20).onChange(generatePlane);
+
+gui.add(world.plane, "height", 1, 20).onChange(generatePlane);
+
+gui.add(world.plane, "widthSegments", 1, 30).onChange(generatePlane);
+
+gui.add(world.plane, "heightSegments", 1, 30).onChange(generatePlane);
+function generatePlane() {
   planeMesh.geometry.dispose();
   planeMesh.geometry = new THREE.PlaneGeometry(
     world.plane.width,
     world.plane.height,
-    10,
-    10
+    world.plane.widthSegments,
+    world.plane.heightSegments
   );
 
   const { array } = planeMesh.geometry.attributes.position;
@@ -25,27 +34,7 @@ gui.add(world.plane, "width", 1, 20).onChange(() => {
 
     array[i + 2] = z + Math.random();
   }
-});
-
-gui.add(world.plane, "height", 1, 20).onChange(() => {
-  planeMesh.geometry.dispose();
-  planeMesh.geometry = new THREE.PlaneGeometry(
-    world.plane.width,
-    world.plane.height,
-    10,
-    10
-  );
-
-  const { array } = planeMesh.geometry.attributes.position;
-  for (let i = 0; i < array.length; i += 3) {
-    const x = array[i];
-    const y = array[i + 1];
-    const z = array[i + 2];
-
-    array[i + 2] = z + Math.random();
-  }
-});
-
+}
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
