@@ -30,15 +30,15 @@ renderer.render(scene, camera);
 // const boxMesh = new THREE.Mesh(geometry, material);
 
 //CREATING GRACE BOX
-const graceBox = new THREE.TextureLoader().load("grace.png");
-const grace = new THREE.Mesh(
-  new THREE.BoxGeometry(3, 3, 3),
-  new THREE.MeshBasicMaterial({ map: graceBox })
-);
-// grace.position.z = 30;
-grace.position.x = 10;
-grace.position.y = 20;
-scene.add(grace);
+// const graceBox = new THREE.TextureLoader().load("grace.png");
+// const grace = new THREE.Mesh(
+//   new THREE.BoxGeometry(3, 3, 3),
+//   new THREE.MeshBasicMaterial({ map: graceBox })
+// );
+// // grace.position.z = 30;
+// grace.position.x = 10;
+// grace.position.y = 20;
+// scene.add(grace);
 
 //LIGHT SOURCE
 const light = new THREE.AmbientLight(0xffffff, 1);
@@ -67,15 +67,15 @@ function addStar() {
 }
 Array(200).fill().forEach(addStar);
 
-const sky = new THREE.TextureLoader().load("moon.jpeg");
+const sky = new THREE.TextureLoader().load();
 scene.background = sky;
 
 function animate() {
   requestAnimationFrame(animate);
 
-  grace.rotation.x += 0.01;
-  grace.rotation.y += 0.005;
-  grace.rotation.z += 0.01;
+  //   grace.rotation.x += 0.01;
+  //   grace.rotation.y += 0.005;
+  //   grace.rotation.z += 0.01;
 
   controls.update();
   renderer.render(scene, camera);
