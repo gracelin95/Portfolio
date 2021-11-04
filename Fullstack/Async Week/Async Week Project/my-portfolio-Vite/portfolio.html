@@ -20,9 +20,6 @@
         margin: 0;
         -webkit-font-smoothing: antialiased;
       }
-      /* main {
-        white-space: pre-line;
-      } */
       .font-exo {
         font-family: "Exo 2", sans-serif;
       }
@@ -37,10 +34,17 @@
         font-size: 30px;
         color: gainsboro;
       }
+
+      #backbutton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 11px;
+      }
     </style>
   </head>
   <body>
-    <div id="app">
+    <div id="portfolioPage">
       <div
         class="absolute text-white text-center"
         style="top: 50%; transform: translate(-50%, -50%); left: 50%"
@@ -52,32 +56,39 @@
         ></script>
         <br />
 
-        <a href="https://www.linkedin.com/in/gracelin95/" class="linkedin"
+        <a
+          href="https://www.linkedin.com/in/gracelin95/"
+          target="_blank"
+          class="linkedin"
           ><i class="fab fa-linkedin"></i
         ></a>
 
-        <a href="https://github.com/gracelin95" class="github"
+        <a href="https://github.com/gracelin95" target="_blank" class="github"
           ><i class="fab fa-github"></i
         ></a>
         <br />
-        <!-- <a
-          href="https://www.linkedin.com/in/gracelin95/"
-          class="border px-4 py-2 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
-        >
-          LinkedIn (INSERT ICON)
-        </a> -->
         <main>
+          <a href="./index.html">
+            <button
+              id="backbutton"
+              class="border px-4 py-1 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
+            >
+              Back
+            </button>
+          </a>
           <header>
             <br />
             <div class="aboutme">
               <h1 class="font-exo">About Me</h1>
               <p class="font-space-mono">
-                Hi, I'm Grace. I'm currently a fulltime Grace Hopper Academy of
-                Code student. Previously attended Stony brook University with a
-                major in Business Operations and Management. Upon graduation, I
-                worked in the insurance industry for a couple of years before
-                applying to Grace Hopper Academy of Code to pursue my passion of
-                software. On my spare time, I enjoy learning about photography,
+                Hi, I'm Grace.
+                <br />
+                I'm currently a fulltime Grace Hopper Academy of Code student.
+                Previously attended Stony brook University with a major in
+                Business Operations and Management. Upon graduation, I worked in
+                the insurance industry for a couple of years before applying to
+                Grace Hopper Academy of Code to pursue my passion of software.
+                On my spare time, I enjoy learning about photography,
                 cosmetology, and chilling with my baby.
               </p>
             </div>
@@ -87,75 +98,13 @@
           <section>
             <h2 class="font-exo">Technologies</h2>
             <p class="font-space-mono">
-              Javascript, CSS, HTML, SQL, Express, NodeJS, Three JS, React,
-              Redux
+              Languages: Javascript, Node.js
+              <br />
+              FrontEnd: React, Redux, Three JS, CSS, HTML
+              <br />
+              BackEnd: SQL, PostgreSQL, Express, NodeJS, REST APIs
             </p>
           </section>
-          <!-- <br />
-          <section>
-            <h2 class="font-exo">Experience</h2>
-            <div class="geico">
-              <p>GEICO</p>
-              <p sm>Role: Claims Specialist I</p>
-              <p sm>March 2017 - June 2018</p>
-              <br />
-              <p sm>Role: Claims Specialist II</p>
-              <p sm>June 2018 - March 2020</p>
-              <br />
-              <p sm>Role: Claims Specialist I</p>
-              <p sm>March 2020 - Present</p>
-              <br />
-              <p>Accomplishments</p>
-              <ul>
-                <li>GEICO Associate of the Month</li>
-                <li>GEICO's Chairman Club - Gold Tier</li>
-              </ul>
-            </div>
-            <br /> -->
-          <!-- <div class="mcPartners">
-              <p>M.C. Partners</p>
-              <p sm>Role: Talent Acquistion Intern</p>
-              <p sm>
-                M.C. Partners is an executive search firm, based in London and
-                New York, that focuses on connecting forward-thinking businesses
-                and individuals with opportunities for both sides to thrive, to
-                grow, to change, to inspire, to create value, to make a
-                difference.
-              </p>
-              <p sm>Jan 2017 - Feb 2017</p>
-              <ul>
-                <li>
-                  Researched and sourced qualified candidates via LinkedIn
-                </li>
-                <li>Outreached to potential candidates</li>
-                <li>Data entry into the Salesforce CRM</li>
-                <li>Scheduled Interviews</li>
-              </ul>
-            </div>
-            <br /> -->
-          <!-- <div class="sbu">
-              <p>Stony Brook University</p>
-              <p sm>Role: Business Teaching Assistant</p>
-              <ul>
-                <li>
-                  Improved communication skills by interacting with
-                  approximately 60 students when necessary
-                </li>
-                <li>Assisted the students with statistical class project</li>
-                <li>Graded written assignments for 60 students</li>
-              </ul>
-            </div>
-          </section>
-          <br /> -->
-          <!-- <section>
-            <h2 class="font-exo">Education</h2>
-            <p>Stony Brook University</p>
-            <p sm>Date: 2013 - 2017</p>
-            <p sm>
-              Degree: Bachelor's of Science in Business Management and
-              Operations
-            </p>
-          </section> -->
         </main>
       </div>
     </div>

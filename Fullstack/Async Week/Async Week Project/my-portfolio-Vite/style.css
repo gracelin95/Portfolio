@@ -4,26 +4,10 @@ canvas {
   height: 100%;
 }
 
-html {
+/* html {
   white-space: pre-wrap;
-}
-
-/* main {
-  width: 100vw;
-  z-index: 99;
-  width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-  position: absolute;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); 
-}*/
+} */
 
 #aboutme {
   background-color: white;
-}
-
-i {
-  font-size: 16px;
 }

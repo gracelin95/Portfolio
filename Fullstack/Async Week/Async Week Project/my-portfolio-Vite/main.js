@@ -51,14 +51,6 @@ function generatePlane() {
   planeMesh.geometry.attributes.position.originalPosition =
     planeMesh.geometry.attributes.position.array;
 
-  // const { array } = planeMesh.geometry.attributes.position;
-  // for (let i = 0; i < array.length; i += 3) {
-  //   const x = array[i];
-  //   const y = array[i + 1];
-  //   const z = array[i + 2];
-
-  //   array[i + 2] = z + Math.random();
-  // }
   const colors = [];
   for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
     colors.push(0, 0.19, 0.4);
@@ -123,7 +115,6 @@ function animate() {
   renderer.render(scene, camera);
   raycaster.setFromCamera(mouse, camera);
   frame += 0.01;
-  //planeMesh.rotation.x += 0.01;
 
   const {
     array,
