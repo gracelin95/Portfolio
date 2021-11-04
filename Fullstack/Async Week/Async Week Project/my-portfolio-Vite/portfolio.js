@@ -47,6 +47,8 @@ scene.add(light);
 
 //GRID
 const gridHelper = new THREE.GridHelper(200, 50);
+gridHelper.rotation.x = Math.PI / 2;
+gridHelper.rotation.y = Math.PI / 4;
 
 scene.add(gridHelper);
 
