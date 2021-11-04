@@ -70,6 +70,15 @@ Array(200).fill().forEach(addStar);
 const sky = new THREE.TextureLoader().load();
 scene.background = sky;
 
+function scaleToFit() {
+  const rect = document.body.getBoundingClientRect().top;
+
+  camera.position.z = rect * -0.01;
+  camera.position.x = rect * -0.0002;
+  camera.position.y = rect * -0.0002;
+}
+document.body.onscroll = scaleToFit;
+
 function animate() {
   requestAnimationFrame(animate);
 
