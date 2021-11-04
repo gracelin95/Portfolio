@@ -35,9 +35,9 @@ const grace = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: graceBox })
 );
-grace.position.z = 30;
-grace.position.x = -10;
-grace.position.y = 15;
+// grace.position.z = 30;
+grace.position.x = 10;
+grace.position.y = 20;
 scene.add(grace);
 
 //LIGHT SOURCE
@@ -70,25 +70,8 @@ Array(200).fill().forEach(addStar);
 const sky = new THREE.TextureLoader().load("moon.jpeg");
 scene.background = sky;
 
-function moveCamera() {
-  const t = document.body.getBoundingClientRect().top;
-
-  grace.rotation.x += 0.01;
-  grace.rotation.y += 0.005;
-  grace.rotation.z += 0.01;
-
-  camera.position.z = t * -0.1;
-  camera.position.x = t * -0.002;
-  camera.position.y = t * -0.0002;
-}
-document.body.onscroll = moveCamera;
-
 function animate() {
   requestAnimationFrame(animate);
-
-  //   boxMesh.rotation.x += 0.01;
-  //   boxMesh.rotation.y += 0.005;
-  //   boxMesh.rotation.z += 0.01;
 
   grace.rotation.x += 0.01;
   grace.rotation.y += 0.005;

@@ -2,7 +2,6 @@ import gsap from "gsap";
 import * as THREE from "https://unpkg.com/three@0.126.1/build/three.module.js";
 import { OrbitControls } from "https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
-import * as portfolio from "./portfolio";
 
 const gui = new dat.GUI();
 const world = {
@@ -201,4 +200,11 @@ animate();
 addEventListener("mousemove", (event) => {
   mouse.x = (event.clientX / innerWidth) * 2 - 1;
   mouse.y = -(event.clientY / innerHeight) * 2 + 1;
+});
+
+document.getElementById("portfolio").addEventListener("click", (event) => {
+  document.querySelector("canvas").classList.toggle("fadeOut");
+  setTimeout(() => {
+    window.location.replace("/portfolio.html");
+  }, 1850);
 });

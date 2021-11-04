@@ -26,6 +26,30 @@
       .font-space-mono {
         font-family: "Space Mono", monospace;
       }
+      @-webkit-keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .fadeOut {
+        -webkit-animation-name: fadeOut;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        animation-name: fadeOut;
+      }
     </style>
   </head>
   <body>
@@ -38,13 +62,12 @@
           Grace Lin
         </h1>
         <p class="font-exo text-4xl">SOFTWARE ENGINEER</p>
-        <a
-          href="https://www.linkedin.com/in/gracelin95/"
+        <button
+          id="portfolio"
           class="border px-4 py-2 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
         >
-          View Resume
-        </a>
-        <a href="./portfolio.html">Portfolio</a>
+          Portfolio
+        </button>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
