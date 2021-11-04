@@ -1,8 +1,21 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html {
+  white-space: pre-wrap;
+}
+
+main {
+  width: 100vw;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }

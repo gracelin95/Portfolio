@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* main {
+        white-space: pre-line;
+      } */
+      .font-exo {
+        font-family: "Exo 2", sans-serif;
+      }
+      .font-space-mono {
+        font-family: "Space Mono", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="absolute text-center"
+        style="top: 50%; transform: translate(-50%, -50%); left: 50%"
+      >
+        <p class="font-exo text-4xl">WORK</p>
+        <a
+          href="https://www.linkedin.com/in/gracelin95/"
+          class="border px-4 py-2 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
+        >
+          LinkedIn (INSERT ICON)
+        </a>
+        <main>
+          <header>
+            <br />
+
+            <h1 class="font-exo">About Me</h1>
+            <p>
+              write something about myself over here. need to make this as long
+              as possible for now. welcome to grace's portfolio page that will
+              hopefully work on any computer. enjoy.
+            </p>
+          </header>
+
+          <br />
+          <section>
+            <h2 class="font-exo">Technologies</h2>
+            <p>
+              Javascript, CSS, HTML, SQL, Express, NodeJS, Three JS, React,
+              Redux
+            </p>
+          </section>
+          <br />
+          <section>
+            <h2 class="font-exo">Experience</h2>
+            <div class="geico">
+              <p>GEICO</p>
+              <p sm>Role: Claims Specialist I</p>
+              <p sm>March 2017 - June 2018</p>
+              <br />
+              <p sm>Role: Claims Specialist II</p>
+              <p sm>June 2018 - March 2020</p>
+              <br />
+              <p sm>Role: Claims Specialist I</p>
+              <p sm>March 2020 - Present</p>
+              <br />
+              <p>Accomplishments</p>
+              <ul>
+                <li>GEICO Associate of the Month</li>
+                <li>GEICO's Chairman Club - Gold Tier</li>
+              </ul>
+            </div>
+            <br />
+            <div class="mcPartners">
+              <p>M.C. Partners</p>
+              <p sm>Role: Talent Acquistion Intern</p>
+              <p sm>
+                M.C. Partners is an executive search firm, based in London and
+                New York, that focuses on connecting forward-thinking businesses
+                and individuals with opportunities for both sides to thrive, to
+                grow, to change, to inspire, to create value, to make a
+                difference.
+              </p>
+              <p sm>Jan 2017 - Feb 2017</p>
+              <ul>
+                <li>
+                  Researched and sourced qualified candidates via LinkedIn
+                </li>
+                <li>Outreached to potential candidates</li>
+                <li>Data entry into the Salesforce CRM</li>
+                <li>Scheduled Interviews</li>
+              </ul>
+            </div>
+            <br />
+            <div class="sbu">
+              <p>Stony Brook University</p>
+              <p sm>Role: Business Teaching Assistant</p>
+              <ul>
+                <li>
+                  Improved communication skills by interacting with
+                  approximately 60 students when necessary
+                </li>
+                <li>Assisted the students with statistical class project</li>
+                <li>Graded written assignments for 60 students</li>
+              </ul>
+            </div>
+          </section>
+          <br />
+          <section>
+            <h2 class="font-exo">Education</h2>
+            <p>Stony Brook University</p>
+            <p sm>Date: 2013 - 2017</p>
+            <p sm>
+              Degree: Bachelor's of Science in Business Management and
+              Operations
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <canvas id="bg"> </canvas>
+    <script type="module" src="/portfolio.js"></script>
+  </body>
+</html>
