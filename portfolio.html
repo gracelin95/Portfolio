@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-exo {
+        font-family: "Exo 2", sans-serif;
+      }
+      .font-space-mono {
+        font-family: "Space Mono", monospace;
+      }
+      i {
+        font-size: 27px;
+        margin-right: 10px;
+      }
+      i:hover {
+        font-size: 30px;
+        color: gainsboro;
+      }
+
+      #backbutton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="portfolioPage">
+      <div
+        class="absolute text-white text-center"
+        style="top: 50%; transform: translate(-50%, -50%); left: 50%"
+      >
+        <p class="font-exo text-4xl">PORTFOLIO</p>
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <br />
+
+        <a
+          href="https://www.linkedin.com/in/gracelin95/"
+          target="_blank"
+          class="linkedin"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+
+        <a href="https://github.com/gracesqlin" target="_blank" class="github"
+          ><i class="fab fa-github"></i
+        ></a>
+        <br />
+        <main>
+          <a href="./index.html">
+            <button
+              id="backbutton"
+              class="border px-4 py-1 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block"
+            >
+              Back
+            </button>
+          </a>
+          <header>
+            <br />
+            <div class="aboutme">
+              <h1 class="font-exo">About Me</h1>
+              <p class="font-space-mono">
+                Hi, I'm Grace.
+                <br />
+                I'm currently a fulltime Grace Hopper Academy of Code student.
+                Previously attended Stony brook University with a major in
+                Business Operations and Management. Upon graduation, I worked in
+                the insurance industry for a couple of years before applying to
+                Grace Hopper Academy of Code to pursue my passion of software.
+                On my spare time, I enjoy learning about photography,
+                cosmetology, and chilling with my baby.
+              </p>
+            </div>
+          </header>
+
+          <br />
+          <section>
+            <h2 class="font-exo">Technologies</h2>
+            <p class="font-space-mono">
+              Languages: Javascript, Node.js
+              <br />
+              FrontEnd: React, Redux, Three JS, CSS, HTML
+              <br />
+              BackEnd: SQL, PostgreSQL, Express, NodeJS, REST APIs
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <canvas id="bg"> </canvas>
+    <script type="module" src="/portfolio.js"></script>
+  </body>
+</html>
