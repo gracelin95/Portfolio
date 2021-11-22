@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start:dev": "npm run dev"
   },
   "devDependencies": {
     "vite": "^2.6.4"
