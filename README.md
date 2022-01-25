@@ -1,8 +1,6 @@
 # Portfolio
 This is an immersive 3D Portfolio. Users can have fun moving the background around, zooming in and out and even change the number of facets on the homepage while learning a little about me.
 
-![threejs](https://user-images.githubusercontent.com/84825113/150907068-4272048a-0502-4b67-879a-e96218546f9f.png)
-
 Video Demo: https://youtu.be/DpTcOQhr8Fc
 
 ## Getting Started
